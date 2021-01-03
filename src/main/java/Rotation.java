@@ -1,6 +1,7 @@
 public class Rotation {
-
+// A Program to check if strings are rotations of each other or not
     public static void main(String[] args) {
+
         System.out.println(Boolean.toString(areRotation("ABCD","DABC")));
 
     }

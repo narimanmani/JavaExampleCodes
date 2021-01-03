@@ -1,9 +1,6 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.*;
-
-
 public class CapitalWords {
+
+    // Program to convert first character uppercase in a sentence
     public static void main(String[] args) {
         System.out.println(capitalWords("trees are beautiful"));
     }

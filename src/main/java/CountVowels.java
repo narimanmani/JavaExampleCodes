@@ -1,7 +1,6 @@
 public class CountVowels {
-
+    //// Program to count vowels in a string
     public static void main(String[] args) {
-
         int vCount = countVowels("a green apple");
         System.out.println(vCount);
 
