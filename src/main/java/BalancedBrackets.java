@@ -4,13 +4,27 @@ import java.util.Stack;
 public class BalancedBrackets {
 
     public static void main(String[] args) {
-        String expr = "([{})";
+        // Sample expressions
+        String[] expressions = {
+                "([{}])",      // Balanced
+                "(]",          // Not balanced
+                "({[]})",      // Balanced
+                "((()",        // Not balanced
+                "{[()()]}",    // Balanced
+                "{[(])}",      // Not balanced
+                "",            // Balanced (empty string)
+                "([)]",        // Not balanced
+                "([])",        // Balanced
+                "({})",        // Balanced
+        };
 
-        // Function call
-        if (areBracketsBalanced(expr))
-            System.out.println("Balanced ");
-        else
-            System.out.println("Not Balanced ");
+        // Testing each expression
+        for (String expr : expressions) {
+            if (areBracketsBalanced(expr))
+                System.out.println("'" + expr + "' is Balanced");
+            else
+                System.out.println("'" + expr + "' is Not Balanced");
+        }
     }
     // Function to check if brackets are balanced
     public static boolean areBracketsBalanced(String expr) {
